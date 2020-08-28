@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  Portafolio
+{% endblock title %}
+
+{% block header-bg %}{% static 'img/portfolio.webp' %}{% endblock header-bg %}
+
+{% block header %}
+<span class="subheading"><strong>PORTAFOLIO DE PROYECTOS</strong></span>
+{% endblock header %}
+
+{% block content %}
+{% for project in projects %}
+<div class="col-lg-3 col-md-4 offset-lg-1" style="padding-top: 80px;">
+  <img class="img-fluid" src="{{ project.image.url }}" alt="imagen de proyecto">
+</div>
+<div class="col-lg-7 col-md-8" style="padding-top: 80px;">
+  <h2 class="section-heading title">{{ project.title }}</h2>   
+  <p>{{ project.description }}</p>
+  <p><a href="{{ project.link }}" target="_blank" style="text-decoration: none; color: steelblue;">Github</a></p>
+</div>
+{% endfor %}
+{% endblock content %}

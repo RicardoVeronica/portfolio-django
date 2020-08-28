@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+  Home
+{% endblock title %}
+
+{% block header-bg %}{% static 'img/portada.webp' %}{% endblock header-bg %}
+
+{% block header %}
+<span class="subheading"><strong>ENAMORADO DEL DESARROLLO WEB</strong></span>
+<span class="subheading"><strong>APASIONADO POR LA ENSENANZA Y EL APRENDIZAJE CONTINUO</strong></span>
+{% endblock header %}
+
+{% block content %}
+<div class="col-lg-3 col-md-4 offset-lg-1" style="padding-top: 80px;">
+  <img class="img-fluid avatar" src="{% static 'img/ricardo_veronica.png' %}" alt="Mi foto">
+</div>
+<div class="col-lg-7 col-md-8" style="padding-top: 80px;">
+  <h2 class="section-heading">Acerca de mi</h2>   
+  <p>Soy Ingeniero en sistemas computacionales originario de Guadalajara México, especializado en desarrollo web, usuario de GNU/Linux con distros basadas en Debian, me encanta enseñar y aprender nuevas tecnologías tanto backend como frontend</p>
+</div>
+{% endblock content %}
