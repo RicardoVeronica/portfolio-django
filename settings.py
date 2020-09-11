@@ -45,10 +45,15 @@ aldryn_addons.settings.load(locals())
 INSTALLED_APPS.extend([
     'core.apps.CoreConfig',
     'portfolio.apps.PortfolioConfig',
+    'socialnets.apps.SocialnetsConfig',
 
     # 3rd party
     'rest_framework',
 ])
+
+TEMPLATES[0]['OPTIONS']['context_processors'].append(
+    'socialnets.processors.context_processor'
+)
 
 # To see the settings that have been applied, use the Django diffsettings
 # management command.
