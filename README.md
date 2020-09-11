@@ -17,6 +17,6 @@ This project uses my personal stack to work:
 ### Run locally
 
 ```sh
-$ docker-compose run
+$ docker-compose up
 # And go to 0.0.0.0:8000
 `````````
