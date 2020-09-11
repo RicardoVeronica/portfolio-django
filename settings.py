@@ -49,11 +49,31 @@ INSTALLED_APPS.extend([
 
     # 3rd party
     'rest_framework',
+    'ckeditor',
 ])
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
 
 TEMPLATES[0]['OPTIONS']['context_processors'].append(
     'socialnets.processors.context_processor'
 )
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', 'Source'],
+            ['TextColor', 'BGColor']
+        ]
+    }
+}
 
 # To see the settings that have been applied, use the Django diffsettings
 # management command.

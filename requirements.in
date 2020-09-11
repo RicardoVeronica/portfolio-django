@@ -4,3 +4,4 @@ https://control.divio.com/api/v1/apps/serve/aldryn-django/2.2.16.1/b460938a-f357
 https://control.divio.com/api/v1/apps/serve/aldryn-sso/2.0.0/e6eccefa-e8f5-492d-8e71-79fc99f30201/aldryn-sso-2.0.0.tar.gz#egg=aldryn-sso==2.0.0
 # </INSTALLED_ADDONS>
 djangorestframework==3.11.0
+django-ckeditor
