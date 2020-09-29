@@ -1,8 +1,8 @@
-# Django portfolio project
+# Django based Portfolio Project
 
-Simple portfolio project made with Django, with simple GET api endpoint for retrieve all projects in Django rest framework browsable api...
+Simple portfolio project made with Django using simple GET API endpoints for retrieval. Complete project is in Django rest framework browsable api...
 
-### Tech
+### Technologies Used
 
 This project uses my personal stack to work:
 
@@ -16,10 +16,10 @@ This project uses my personal stack to work:
   * Serializers
   * custom permissions
 * Divio Cloud - Web platform to deploy projects easily
-* Docker - Like virtual environment for Django projects
+* Docker - Container based virtual environment for Django projects
 * Git and Github - Version control
 
-[This proyect live](https://portfolio-django.us.aldryn.io/)
+[This project live](https://portfolio-django.us.aldryn.io/)
 
 ### Run locally
 
@@ -30,10 +30,10 @@ $ docker-compose up
 
 ### For API
 
-For list all proyects or post a project in Browsable API go to:
+For listing all projects or to post a project in Browsable API, go to:
 
 [Endpoint Get list projects](https://portfolio-django.us.aldryn.io/api/)
 
-For detail, update or delete a project go to: (Protected with custom permission)
+For details, updates or deletion of a project, go to: (Protected with custom permission)
 
 [Endpoint Get detail project](https://portfolio-django.us.aldryn.io/api/project/1/)
